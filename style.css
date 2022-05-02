@@ -371,7 +371,7 @@ li{
 }
 .discount_text{
     background-color:#f4f4f4;
-    height:415px;
+    height:auto;
     padding:75px 90px 50px;
     text-align: center;
 }
@@ -387,7 +387,7 @@ li{
     text-align: center;
     position: relative;
     z-index: 1;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
 }
 .discount_text .discount_text_title::after{
     content:'';
@@ -447,11 +447,12 @@ li{
 }
 /* ----------------- */
 .shop-method-area .single-method i{
-    margin-left: 90px;
+/*     margin-left: 90px; */
     font-size: 45px;
     color:#ff7200;
     margin-bottom: 25px;
     display: block;
+    text-align:center;
 }
 .shop-method-area .single-method h6{
     color:#282828;
@@ -459,9 +460,11 @@ li{
     font-weight: 600;
     line-height:1.2;
     margin-bottom: 12px;
+    text-align:center;
 }
 .shop-method-area .single-method p{
     font-size: 15px;
+    text-align:center;
 }
 
 /* ------------------------------------------------------------- */

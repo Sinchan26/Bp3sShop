@@ -410,6 +410,7 @@ li{
     font-size: 55px;
     color:#ff7200;
     margin-bottom: 10px;
+    margin-left: -26px;
 }
 .discount_text .discount_text_title h5{
     color:#ff7200;
@@ -502,6 +503,7 @@ li{
     font-weight: 600;
     box-shadow: 1px 3px 8px rgba(0,0,0,0.15);
     transition: all 0.3s;
+    margin-left: 23px;
 }
 .btn.submit:hover{
     background-color: #e65656;

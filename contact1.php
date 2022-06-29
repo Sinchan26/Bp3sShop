@@ -5,7 +5,7 @@ $conn = mysqli_connect('localhost','root','','test_db');
 if(isset($_POST['done'])){
     $name=$_POST['name'];
     $mail=$_POST['mail'];
-    $msg=$_POST['message'];
+    $msg=$_POST['messsage'];
     $insert="INSERT INTO `contact`(`name`, `mail`, `msg`) VALUES ('$name','$mail','$msg')";
     mysqli_query($conn,$insert);
     header('location:contact1.php');

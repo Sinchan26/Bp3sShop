@@ -1,3 +1,20 @@
+<?php
+
+// include "db_conn.php";
+$conn = mysqli_connect('localhost','root','','test_db');
+if(isset($_POST['done'])){
+    $name=$_POST['name'];
+    $mail=$_POST['mail'];
+    $msg=$_POST['message'];
+    $insert="INSERT INTO `contact`(`name`, `mail`, `msg`) VALUES ('$name','$mail','$msg')";
+    mysqli_query($conn,$insert);
+    header('location:contact1.php');
+}
+
+
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -41,28 +58,29 @@
                 </div>
             </div>
             <div class="contactForm">
-                <form action=""> 
+                <form action="" method="post"> 
                     <h2>Send Message</h2>
                     <div class="inputBox">
-                        <input type="text" name="" required="required">
+                        <input type="text" name="name" required="required">
                         <span>Full Name</span>
                     </div>
                     <div class="inputBox">
-                        <input type="text" name="" required="required">
+                        <input type="text" name="mail" required="required">
                         <span>Email</span>
                     </div>
                     <div class="inputBox">
-                       <textarea required="required"></textarea>
-                        <span>Type Your Message....</span>
+                       <input type="text" name="messsage" required="required">
+                       <span>Type Your Message/Feedback</span>
                     </div>
                     <div class="inputBox">
-                        <input type="submit" name="" value="send">
+                        <input type="submit" name="done" value="send">
                         
                     </div>
                 </form>
             </div>
         </div>
     </section>
+    
 
 
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
